@@ -15,7 +15,6 @@ namespace Calculator_xUnit_Assignement
                 // Menu Creation
                 Console.WriteLine("Welcom to Caluclator program:\n Please select the one of the folling option:");
                 Console.WriteLine(" 1:Addition" + "\n 2:Subtration" + "\n 3:Multiplication" + "\n 4:Divison" + "\n 5:IntAddition" + "\n 6:IntSubtration" );
-                // User to entere first input
                 int.TryParse(Console.ReadLine(), out int selection);
                 double[] addArray = new double[] { 2.5, 4, 6.4, 8 };
                 double[] subArray = new double[] { -12.5, -3, 5, 24 };

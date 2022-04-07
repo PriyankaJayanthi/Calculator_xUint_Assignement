@@ -82,7 +82,8 @@ namespace calculator_xUnit.Test
         }
         [Theory]
         [InlineData(7.5, 12.4, 93)]
-        [InlineData(5, 1.3, 6.5)]
+        [InlineData(5, 1.3, 4.5)] //check for faild testcase
+        [InlineData(45, 12, 540)]
         public void Multiplication_doublenum(double x, double y, double expected)
         {
             double actual = calculatorTest.Multiplication(x, y);
@@ -90,6 +91,8 @@ namespace calculator_xUnit.Test
         }
         [Theory]
         [InlineData(20, 100, 0.2)]
+        [InlineData(12, 3, 6)] //check for faild testcase
+        [InlineData(54, 5, 10.8)]
         public void Division_doublenum(double x, double y, double expected)
         {
             double actual = calculatorTest.Division(x, y);
