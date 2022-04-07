@@ -14,7 +14,7 @@ namespace Calculator_xUnit_Assignement
             {
                 // Menu Creation
                 Console.WriteLine("Welcom to Caluclator program:\n Please select the one of the folling option:");
-                Console.WriteLine(" 1:Addition" + "\n 2:Subtration" + "\n 3:Multiplication" + "\n 4:Divison" + "\n 5:IntAddition" + "\n 6:IntSubtration" );
+                Console.WriteLine(" 1:Addition" + "\n 2:Subtration" + "\n 3:Multiplication" + "\n 4:Divison" + "\n 5:Int Addition" + "\n 6:Int Subtration" );
                 int.TryParse(Console.ReadLine(), out int selection);
                 double[] addArray = new double[] { 2.5, 4, 6.4, 8 };
                 double[] subArray = new double[] { -12.5, -3, 5, 24 };
@@ -50,12 +50,12 @@ namespace Calculator_xUnit_Assignement
                     case 5:
                         Console.Clear();
                         result = Addition(addArray1);
-                        output = "IntAddition result is:" + result;
+                        output = "Int Addition result is:" + result;
                         break;
                     case 6:
                         Console.Clear();
                         result = Subtraction(subArray1);
-                        output = "IntSubtraction result is :" + result;
+                        output = "Int Subtraction result is :" + result;
                         break;
                     default:
                         Console.WriteLine("Not a valld selection,try again");
@@ -136,8 +136,7 @@ namespace Calculator_xUnit_Assignement
                 double result = num1 / num2;
                 return result;
             }
-
+ 
         }
-
     }
 }
